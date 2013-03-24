@@ -19,4 +19,8 @@ class SessionsController < ApplicationController
 		redirect_to root_url
 	end
 
+	def current_user?(user)
+		user == current_user
+	end
+
 end
